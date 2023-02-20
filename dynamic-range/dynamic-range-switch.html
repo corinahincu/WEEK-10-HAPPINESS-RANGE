@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DYNAMIC RANGE</title>
+    <style>
+      #content {
+        padding: 15px;
+      }
+      #inputRange{
+        width: 70%;
+        margin-bottom: 30px;
+      }
+    </style>
+    <!-- 
+      HW1 : change the if else -> switch
+    -->
+  </head>
+  <body>
+    <label>
+      happiness level:
+    <input
+    id="inputRange"
+    value="3"
+    type="range"
+    min="1"
+    max="5"
+    
+    
+    
+    oninput="
+        const hapLev = inputRange.value
+        switch(hapLev){
+          
+          case '1' : 
+            content.innerHTML = 
+            `<img src= 'https://icons.iconarchive.com/icons/designbolts/emoji/48/Emoji-Helpless-icon.png' >`;
+            break;
+          case '2' : 
+            content.innerHTML = 
+            `<img src='https://icons.iconarchive.com/icons/designbolts/emoji/48/Emoji-Hopeless-icon.png' >`;
+            break;
+          case  '3' : 
+            content.innerHTML = 
+            `<img src='https://icons.iconarchive.com/icons/designbolts/emoji/48/Emoji-Helpful-icon.png' >`;
+            break;
+          case '4' : 
+            content.innerHTML = 
+            `<img src='https://icons.iconarchive.com/icons/designbolts/emoji/48/Emoji-Happy-icon.png' >`;
+            break;
+            case '5' : 
+            content.innerHTML = 
+            `<img src='https://icons.iconarchive.com/icons/designbolts/emoji/48/Emoji-Helpless-icon.png ' >`;
+            break;
+        }
+      
+    
+    "
+    >
+    </label>
+    
+    <span id="content">
+      <img src='https://icons.iconarchive.com/icons/designbolts/emoji/48/Emoji-Helpful-icon.png'>
+    </span>
+    
+    <script>
+      console.log(content)
+    </script>
+  </body>
+</html>
